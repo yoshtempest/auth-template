@@ -13,7 +13,7 @@
             <input placeholder="Email:" class="email" type="text" required>
             <input placeholder="Senha:" type="password" name="password" required>
             <div class="horizontalContainer">
-                <div id="import-here"></div>
+                <div id="checkbox"></div>
                 <a href="/forgetPassword">Esqueci Minha Senha</a>
             </div>
             <button type="submit">Entrar</button>
@@ -24,8 +24,12 @@
         fetch('../components/checkbox/checkbox.html')
             .then(response => response.text())
             .then(html => {
-            document.getElementById('import-here').innerHTML = html;
+            document.getElementById('checkbox').innerHTML = html;
         });
+        
+        function toggleEvent(change) {
+            change.classList.toggle('checked');
+        }
     </script>
 </body>
 </html>

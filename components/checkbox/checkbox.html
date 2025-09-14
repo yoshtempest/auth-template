@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/globals.css">
+    <style>
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .checkbox:hover {
+            filter: brightness(0.8)
+        }
+
+        .checkbox.checked::after {
+            content: '✔';
+            padding: 3px;
+        }
+    </style>
 </head>
-<div class="horizontalContainer">
-    <div class="checkbox"></div>
-    <p>Lembrar Senha</p>
-</div>
+<body>
+    <div class="horizontalContainer">
+        <div class="checkbox" onclick="toggleEvent(this)"></div>
+        <p>Lembrar Senha</p>
+    </div>
+</body>
 </html>
-
-<style>
-    .checkbox {
-        width: 24px;
-        height: 24px;
-        border: 2px solid black;
-        display: inline-block;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .checkbox:hover {
-        border-color: blue;
-    }
-
-    .checkbox.checked::after {
-        opacity: 1;
-    }
-</style>

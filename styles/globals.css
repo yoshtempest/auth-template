@@ -13,13 +13,14 @@ p {
 input::placeholder {
     font-family: 'Times New Roman', Times, serif;
     font-size: clamp(16px, 24px, 32px);
-    padding: 10px;
 }
 
 input {
     min-width: 25vw;
     min-height: 8vh;
     border: 1px solid #808080;
+    padding: 15px 10px 10px 10px;
+    font-size: clamp(12px, 20px, 28px);
 }
 
 a {
@@ -46,6 +47,13 @@ body {
     padding-right: 10vw;
 }
 
+button {
+    min-width: 15vw;
+    min-height: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -63,6 +71,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    min-width: 15vw;
+    min-width: 14vw;
     gap: 8px;
+}
+
+.littleGap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

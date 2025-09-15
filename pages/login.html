@@ -11,12 +11,14 @@
         <h1>Login</h1>
         <form action="/login" method="POST">
             <input placeholder="Email:" class="email" type="text" required>
-            <input placeholder="Senha:" type="password" name="password" required>
-            <div class="horizontalContainer">
-                <div id="checkbox"></div>
-                <a href="/forgetPassword">Esqueci Minha Senha</a>
+            <div class="littleGap">
+                <input placeholder="Senha:" type="password" name="password" required>
+                <div class="horizontalContainer">
+                    <div id="checkbox"></div>
+                    <a href="/forgetPassword">Esqueci Minha Senha</a>
+                </div>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit" onclick="location.href='/home'">Entrar</button>
             <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
         </form>
     </div>

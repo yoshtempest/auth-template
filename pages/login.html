@@ -18,10 +18,13 @@
                     <a href="/forgetPassword">Esqueci Minha Senha</a>
                 </div>
             </div>
-            <button type="submit" onclick="location.href='/home'">Entrar</button>
-            <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
+            <div class="littleGap">
+                <button type="submit" onclick="location.href='/home'">Entrar</button>
+                <p>Não tem uma conta? <a href="/register">Cadastre-se</a></p>
+            </div>
         </form>
     </div>
+    <img src="../public/Example.svg"/>
     <script>
         fetch('../components/checkbox/checkbox.html')
             .then(response => response.text())
